@@ -1,0 +1,53 @@
+#selectdepartment{
+  .department{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    .tit{
+      height: 50px;
+      line-height: 50px;
+      text-align: left;
+    }
+    .departcont{
+      background-color: #F8F8F9;
+      height: 300px;
+      overflow-y: auto;
+      border: 1px solid #E3E3E3;
+      border-radius: 3px;
+      padding: 10px 0;
+      .el-tree{
+        background-color: transparent;
+      }
+      .eachchoosedepaert{
+        line-height: 35px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .closechoose{
+          width: 16px;
+          height: 16px;
+          line-height: 16px;
+          font-size: 12px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: #C3CBD6;
+          display: inline-block;
+          color: #ffffff;
+          cursor: pointer;
+        }
+        &:hover{
+          background-color: #f1ebeb;
+        }
+      }
+    }
+    .choose{
+      width: 49.5%;
+    }
+    .alreadychoose{
+      width: 49.5%;
+    }
+  }
+}

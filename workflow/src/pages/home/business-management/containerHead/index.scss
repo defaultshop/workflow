@@ -1,0 +1,27 @@
+.agencyhead{
+    display: flex;
+    justify-content: space-between;
+    .agencyicon{
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+    .num{
+        color: #e4941d;
+    }
+    .addscreenc{
+        color: #333333;
+        padding: 0 10px;
+        cursor: pointer;
+        border: none;
+        line-height: 25px;
+        background: transparent;
+        &:hover{
+            text-decoration: underline;
+        }
+        i{
+            color: #C9C9C9;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+    }
+}

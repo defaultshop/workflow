@@ -1,0 +1,46 @@
+.el-header {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 60px;
+    font-size: 0.8rem;
+    
+}
+  
+.el-aside {
+    color: #333;
+}
+#management{
+    height: 100%;
+    .agencytask{
+        height: 80%; /*写给不支持calc()的浏览器*/
+        height: -moz-calc(100% - 4rem);
+        height: -webkit-calc(100% - 4rem);
+        height: calc(100% - 4rem);
+        .agencyhead{
+            display: flex;
+            justify-content: space-between;
+            .agencyicon{
+                font-size: 1rem;
+                margin-right: 0.5rem;
+            }
+            .num{
+                color: #e4941d;
+            }
+        }
+        .addform{
+            background-color: #ffffff;
+            width: 16rem;
+            text-align: center;
+            font-size: 0.8rem;
+            line-height: 4rem;
+            padding: 7rem 0;
+            margin: 4rem 0 0 5rem;
+            cursor: pointer;
+            div{
+                &:nth-child(2){
+                    color: #999999;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+#formhead{
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    background-color: #3671FF;
+    color: #fff;
+    text-align: center;
+    .formheadback{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        line-height: 70px;
+        padding-left: 20px;
+        max-width: 35%;
+        .back{
+            font-size: 30px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .name{
+            display: inline-block;
+            font-size: 20px;
+            height: 100%;
+            input{
+                height: 40px;
+                vertical-align: middle;
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .formheaddesign{
+        display: inline-block;
+        margin: 0 auto;
+        div{
+            display: inline-block;
+            padding: 0 15px;
+            cursor: pointer;
+            .math{
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                display: inline-block;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                margin-right: 5px;
+                box-sizing: border-box;
+                text-align: center;
+            }
+        }
+    }
+    .formheadbtn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        padding-right: 20px;
+        div{
+            height: 30px;
+            line-height: 30px;
+            padding: 0 20px;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            margin: 20px 0 0 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+            &:nth-child(2){
+                background-color: #fff;
+                color: #3671FF;
+            }
+        }
+    }
+}

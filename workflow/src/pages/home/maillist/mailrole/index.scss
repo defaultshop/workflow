@@ -1,0 +1,205 @@
+.el-header {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 60px;
+    font-size: 0.8rem;
+    
+}
+  
+.el-aside {
+    color: #333;
+}
+#maillist{
+    height: 100%;
+    background-color: #f5f5f7;
+    font-size: 14px;
+    .mailcont{
+        min-height: 600px;
+        position: relative;
+        width: 1230px;
+        margin: 10px auto 20px;
+        border: 1px solid #e7eaf1;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.05);
+        .el-main{
+            padding: 0;
+        }
+        .maillistcont{
+            min-height: 600px;
+            background-color: #ffffff;
+            padding: 0 20px;
+            .mailcontit{
+                position: relative;
+                height: 50px;
+                line-height: 50px;
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.2rem;
+                div{
+                    &:nth-child(1){
+                        font-weight: 600;
+                    }
+                    &:nth-child(2){
+                        display: inline-block;
+                        vertical-align: middle;
+                        height: 1.8rem;
+                        line-height: 1.8rem;
+                        font-size: 0.8rem;
+                        padding: 0 1rem;
+                        border: 1px solid #66ccff;
+                        border-radius: 0.2rem;
+                        margin: 1.1rem 0 0 1.5rem;
+                        color: #999;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .mailcontroute{
+                height: 2rem;
+                line-height: 2rem;
+            }
+            .sondepart{
+                // margin-top: 1rem;
+                .sondepartit{
+                    height: 2.4rem;
+                    line-height: 2.4rem;
+                    font-size: 1.2rem;
+                    i{
+                        margin-right: 0.2rem;
+                        color: #66ccff;
+                    }
+                }
+                .addsondepart{
+                    padding: 10px 0;
+                    border-bottom: 1px solid #eeecec;
+                    border-top: 1px solid #eeecec;
+                    display: flex;
+                    justify-content: flex-start;
+                    .addsondepartbtn{
+                        height: 30px;
+                        line-height: 28px;
+                        span{
+                            display: inline-block;
+                            background-color: #ffffff;
+                            border-radius: 3px;
+                            min-width: 100px;
+                            padding: 0 5px;
+                            margin-right: 5px;
+                            cursor: pointer;
+                            text-align: center;
+                            border: 1px solid #ccc;
+                            transition: all 0.2s;
+                            &:hover{
+                                background-color: #f5f5f5;
+                            }
+                        }
+                        .invite{
+                            border: none;
+                            background-color: rgb(54, 113, 255);
+                            color: #ffffff;
+                            &:hover{
+                                background-color: #2061fd;
+                            }
+                        }
+                    }
+                    .addsondepartint{
+                        height: 30px;
+                        line-height: 28px;
+                        border-radius: 15px;
+                        width: 180px;
+                        border: 1px solid #3671ff;
+                        position: relative;
+                        i{
+                            font-size: 12px;
+                            color: #3671ff;
+                            margin: 0 10px;
+                        }
+                        input{
+                            width: 115px;
+                        }
+                        .closeint{
+                            position: absolute;
+                            right: 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .alldepart{
+                    width: 96%;
+                    height: 12rem;
+                    .eachdepart{
+                        height: 3rem;
+                        line-height: 3rem;
+                        border-bottom: 1px solid #ccc;
+                        box-sizing: border-box;
+                        text-indent: 3rem;
+                        cursor: pointer;
+                        span{
+                            &:nth-child(2){
+                                color: #999;
+                            }
+                        }
+                        &:hover{
+                            background-color: #f5f5f5;
+                        }
+                    }
+                }
+            }
+            .departpeo{
+                .alldepartpeoborder{
+                    margin-top: 1rem;
+                    button{
+                        border: none;
+                        padding: 0;
+                        background-color: transparent;
+                        margin-left: 5px;
+                        i{
+                            font-size: 14px;
+                            color: #3671ff;
+                        }
+                    }
+                }
+                .alldepartpeo{
+                    height: 3rem;
+                    line-height: 3rem;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #ccc;
+                    padding: 0 3%;
+                    text-align: left;
+                    font-weight: 600;
+                    div{
+                        width: 8%;
+                        float: left;
+                        &:nth-child(1){ //60 40
+                            width: 4%;
+                            label{
+                                margin-bottom: 0;
+                            }
+                        }
+                        &:nth-child(2){
+                            width: 12%;
+                        }
+                        &:nth-child(4){
+                            float: right;
+                            text-align: right;
+                            i{
+                                cursor: pointer;
+                            }
+                        }
+                        .type{
+                            background-color: #9fe015;
+                            color: #ffffff;
+                            padding: 0 0.3rem;
+                            border-radius: 0.2rem;
+                            margin-left: 0.2rem;
+                        }
+                    }
+                }
+                .alldepartpeo2{
+                    font-size: 0.7rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

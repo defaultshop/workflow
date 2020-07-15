@@ -1,0 +1,136 @@
+.screencmain{
+    .screenctit{
+        line-height: 30px;
+        border-bottom: 1px solid #ccc;
+        font-weight: 600;
+    }
+    .screencfield{
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      .field{
+        width: 54%;
+        .addcondition{
+          color: #0DB3A6;
+          height: 30px;
+          line-height: 30px;
+          position: relative;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          input{
+            width: 95%;
+            text-indent: 15px;
+          }
+          .fieldicon{
+            position: absolute;
+            font-size: 16px;
+            top: 10px;
+            right: 5px;
+            cursor: pointer;
+          }
+          .conditionlist{
+              position: absolute;
+              top: 35px;
+              left: 0;
+              background-color: #fff;
+              box-shadow: 0 0 4px #ccc;
+              border-radius: 5px;
+              line-height: 30px;
+              padding: 5px 0;
+              width: 90%;
+              z-index: 999;
+              color: #3f80ae;
+              height: 240px;
+              overflow-y: auto;
+              .eachcond{
+                  
+                  i{
+                      margin-left: 10px;
+                  }
+                  .eachcondcont{
+                      padding: 0 10px;
+                      .iconi{
+                          display: inline-block;
+                          padding: 3px;
+                      }
+                      &:hover{
+                          background-color: #f5f5f5;
+                      }
+                  }
+              }
+          }
+        }
+      }
+      .operator{
+        width: 43%;
+        .el-input__inner{
+          height: 30px;
+          line-height: 30px;
+        }
+        .el-input__icon{
+          line-height: inherit;
+        }
+      }
+      .fieldtit{
+        line-height: 30px;
+      }
+    }
+    .screencvalue{
+      .screencvalue-tit{
+        line-height: 30px;
+      }
+      .screencvalue-select{
+        .el-select{
+          width: 100%;
+        }
+      }
+      .eachpressbot{
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 3px;
+        width: 80%;
+        input{
+            width: 95%;
+            text-indent: 10px;
+        }
+      }
+    }
+    .screencbtn{
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+      padding: 10px 0;
+      div{
+        height: 30px;
+        line-height: 30px;
+        padding: 0 1rem;
+        &:nth-child(1){
+          span{
+            color: #006BB4;
+            cursor: pointer;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+        &:nth-child(2){
+          background-color: #3671FF;
+          color: #fff;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+}
+.addscreenc{
+  color: #006BB4;
+  padding: 0 10px;
+  cursor: pointer;
+  border: none;
+  line-height: 25px;
+  &:hover{
+      text-decoration: underline;
+  }
+}

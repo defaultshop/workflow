@@ -1,0 +1,40 @@
+.optionalattribute{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transform: translateY(100%);
+    transition: 0.2s all;
+    z-index: 111;
+    .closeoptional{
+        width: 94%;
+        margin-left: 3%;
+        padding: 15px 0;
+        border-bottom: 1px solid #ccc;
+        span{
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            width: 100%;
+            background-color: #ccc;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+    .allswitch{
+        width: 94%;
+        margin-left: 3%;
+        padding: 20px 0;
+        .eachswitch{
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    
+}

@@ -1,0 +1,62 @@
+.managleft{
+    height: 100%;
+    background-color: #ffffff;
+    .agencylist{
+        padding: 1rem 0 1rem;
+        div{
+            line-height: 3rem;
+            padding-left: 10%;
+            cursor: pointer;
+            color: #999;
+        }
+    }
+    .height10{
+        height: 1px;
+        width: 92%;
+        margin-left: 4%;
+        text-indent: 1000px;
+        overflow: hidden;
+        background-color: #ccc;
+        margin-bottom: 2rem;
+        font-size: 0.8rem;
+    }
+    .created{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5% 0 10%;
+        color: #999;
+        line-height: 2.4rem;
+        i{
+            font-size: 1rem;
+            cursor: pointer;
+            color: #999999;
+        }
+        .filed{
+            color: #4430ec;
+            margin-left: 0.5rem;
+        }
+        .add{
+            margin-left: 0.5rem;
+        }
+        .leftfile{
+            color: #4430ec;
+            margin-right: 0.5rem;
+        }
+        .el-button{
+            padding: 0;
+            border: none;
+            background-color: #ffffff;
+            &:hover{
+                background-color: #ffffff;
+            }
+        }
+    }
+    .group{
+        color: #333333;
+    }
+    .business{
+        color: #333333;
+        padding: 0 5% 0 16%;
+        line-height: 3rem;
+    }
+}

@@ -1,0 +1,164 @@
+.mailleft{
+    background-color: #fafcfe;
+    .el-menu{
+        background-color: #fafcfe;
+    }
+    .topteam{
+        .tabteam{
+            width: 220px;
+            height: 32px;
+            line-height: 32px;
+            margin: 9px auto;
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+            justify-content: flex-start;
+            text-align: center;
+            border-radius: 0.1rem;
+            cursor: pointer;
+            div{
+                width: 50%;
+                &:nth-child(1){
+                    border-top-left-radius: 0.3rem;
+                    border-bottom-left-radius: 0.3rem;
+                    border: 1px solid #66ccff;
+                    border-right: none;
+                }
+                &:nth-child(2){
+                    border-top-right-radius: 0.3rem;
+                    border-bottom-right-radius: 0.3rem;
+                    border: 1px solid #66ccff;
+                    border-left: none;
+                }
+            }
+        }
+    }
+    .botteamrole{
+        position: absolute;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow-y: auto;
+        .addorgan{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px;
+            font-size: 0.6rem;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #3671FF;
+            i{
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+    .botteampart{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+    }
+    .botteam{
+        .allpart{
+            line-height: 40px;
+            cursor: pointer;
+            text-indent: 15px;
+            &:hover{
+                background-color: #e6f7f6;
+            }
+        }
+        .el-tree{
+            background: transparent;
+            .nodeicon{
+                font-size: 12px;
+                margin-right: 3px;
+            }
+            .addicon{
+                margin-left: 0.5rem;
+                font-size: 14px;
+            }
+        }
+        .teamtit{
+            height: 2.6rem;
+            line-height: 2.6rem;
+            background-color: rgb(23, 142, 245);
+            color: #ffffff;
+            padding: 0 3%;
+            cursor: pointer;
+            border-top-left-radius: 0.3rem;
+            border-bottom-left-radius: 0.3rem;
+            i{
+                font-size: 1.4rem;
+                margin-right: 0.4rem;
+                vertical-align: middle;
+                margin-bottom: 0.2rem;
+            }
+            .icon2{
+                font-size: 1rem;
+                margin-bottom: 0.1rem;
+            }
+        }
+        .teamtit2{
+            color: #999999;
+            background-color: #ffffff;
+        }
+        .partmentitem1{
+            position: absolute;
+            top: 40px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow-y: auto;
+            .eachpartment{
+                height: 40px;
+                line-height: 40px;
+                padding: 0 15px;
+                cursor: pointer;
+                border-top-left-radius: 0.3rem;
+                border-bottom-left-radius: 0.3rem;
+                i{
+                    font-size: 1rem;
+                    margin-right: 0.4rem;
+                    vertical-align: middle;
+                    margin-bottom: 0.2rem;
+                    color: rgb(23, 142, 245);
+                }
+                &:hover{
+                    background-color: #66ccff;
+                    color: #ffffff;
+                    i{
+                        color: #ffffff;
+                    }
+                }
+            }
+            .eachpartment2{
+                color: #999999;
+                font-size: 13px;
+                i{
+                    color: #66ccff;
+                }
+                .more{
+                    margin-left: 10px;
+                }
+            }
+        }
+        
+    }
+}
+.addscreenc{
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+.roleaddmore{
+    line-height: 40px;
+    text-align: center;
+    div{
+        cursor: pointer;
+    }
+}

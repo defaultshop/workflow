@@ -1,0 +1,63 @@
+#login{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logincont{
+        width: 24rem;
+        background-color: #ffffff;
+        box-shadow: 0 0 0.5rem #cccccc;
+        border-radius: 0.3rem;
+        padding: 1rem 0 3rem;
+        transition: all 0.4s;
+        .logintit{
+            height: 4rem;
+            line-height: 4rem;
+            font-size: 1.2rem;
+            padding: 0 8%;
+            span{
+                display: inline-block;
+                height: 4rem;
+                line-height: 4rem;
+                box-sizing: border-box;
+                border-bottom: 2px solid #66ccff;
+            }
+        }
+        .alllogin{
+            padding: 2rem 15% 5rem;
+            .eachlogin{
+                margin-top: 1rem;
+                .eachloginame{
+                    line-height: 2rem;
+                }
+                .eachloginint{
+                    width: 100%;
+                    height: 2.4rem;
+                    line-height: 2.4rem;
+                    border: 1px solid #cccccc;
+                    border-radius: 0.3rem;
+                    input{
+                        width: 95%;
+                        text-indent: 0.5rem;
+                    }
+                }
+            }
+        }
+        .loginbtn{
+            width: 70%;
+            margin-left: 15%;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            background-color: #66ccff;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 0.3rem;
+            cursor: pointer;
+        }
+    }
+}

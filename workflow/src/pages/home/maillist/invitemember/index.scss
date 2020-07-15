@@ -1,0 +1,159 @@
+#invitemember{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all linear;
+    font-size: 14px;
+    z-index: 100;
+    opacity: 0;
+    .boxsha{
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba($color: #000000, $alpha: 0.1);
+      text-indent: 10000px;
+      z-index: 100;
+      overflow: hidden;
+    }
+    .invitemain{
+      background-color: #fff;
+      width: 600px;
+      margin: 7% auto 0;
+      background-color: #fff;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 101;
+      box-shadow: 0 2px 3px 0 rgba(146,146,146,.5);
+      transform: scale(0.8);
+      transition: 0.3s all;
+      .invitetit{
+        position: relative;
+        height: 55px;
+        line-height: 55px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0 20px;
+        border-bottom: 1px solid #e9e9e9;
+        font-size: 16px;
+        color: #1F2D3D;
+        i{
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 55px;
+          font-size: 15px;
+          cursor: pointer;
+          text-align: center;
+        }
+      }
+      .invitecont{
+        height: 590px;
+        .invitecont-tab{
+          border-bottom: 1px solid #e0e0e0;
+          position: relative;
+          margin: 0 40px;
+          display: flex;
+          justify-content: flex-start;
+          div{
+            width: 33.3%;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            cursor: pointer;
+            &:hover{
+              color: rgb(28, 93, 249);
+            }
+          }
+        }
+        .invitecont-form{
+          margin: 0 40px;
+          .formtip{
+            color: #939393;
+            font-size: 12px;
+            margin: 15px 0px 20px;
+            li{
+              list-style-type: disc;
+            }
+          }
+          .adduser{
+            border: 1px solid #DCDFE6;
+            border-radius: 4px;
+            height: 80px;
+            position: relative;
+            text-align: center;
+            padding: 4px 6px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            overflow: auto;
+            .choose{
+              display: inline-block;
+              color: #ccc;
+              height: 70px;
+              line-height: 70px;
+              width: 100%;
+              cursor: pointer;
+            }
+            .eachname{
+              background-color: #f5f5f5;
+              height: 24px;
+              line-height: 24px;
+              font-size: 12px;
+              padding: 0 10px;
+              margin: 0 10px 10px 0;
+              .namel{
+                  width: 18px;
+                  height: 18px;
+                  line-height: 17px;
+                  border-radius: 50px;
+                  background-color: #FA0;
+                  margin-right: 5px;
+                  display: inline-block;
+                  i{
+                    font-size: 12px;
+                    color: #fff;
+                  }
+              }
+            }
+          }
+        }
+        .invitebtn{
+          margin: 0 40px;
+          display: flex;
+          justify-content: flex-start;
+          div{
+            height: 30px;
+            line-height: 28px;
+            padding: 0 20px;
+            margin-right: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            border: 1px solid rgb(28, 93, 249);
+            transition: all 0.2s;
+            &:hover{
+              background-color: #f5f5f5;
+            }
+            &:nth-child(1){
+              background-color: #3671FF;
+              color: #fff;
+              &:hover{
+                background-color: rgb(28, 93, 249);
+              }
+            }
+          }
+        }
+      }
+    }
+}

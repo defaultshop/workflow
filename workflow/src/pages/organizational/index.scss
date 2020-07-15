@@ -1,0 +1,66 @@
+#organiza{
+    .organizatit{
+        width: 70%;
+        margin-left: 15%;
+        line-height: 4rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .organizacont{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin-left: 15%;
+        .organizacontlt{
+            flex: 1;
+            box-shadow: 0 0 0.2rem #ccc;
+            border-radius: 0.2rem;
+            background-color: #fafcfe;
+            .structure{
+                height: 3rem;
+                line-height: 3rem;
+                text-indent: 1rem;
+                font-size: 1rem;
+            }
+            .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content{
+                background-color: #ebf8f7;
+            }
+            .el-tree{
+                background: transparent;
+            }
+            .addicon{
+                margin-left: 0.5rem;
+            }
+        }
+        .organizacontrt{
+            flex: 2;
+            box-shadow: 0 0 0.2rem #ccc;
+            border-radius: 0.2rem;
+            .orgrtit{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 1rem;
+                height: 4rem;
+                line-height: 4rem;
+                align-items: center;
+                div{
+                    font-size: 1.3rem;
+                    &:nth-child(2){
+                        height: 2rem;
+                        line-height: 2rem;
+                        padding: 0 1rem;
+                        background-color: #007bff;
+                        color: #fff;
+                        border-radius: 0.2rem;
+                        font-size: 1rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .page{
+            padding: 2rem 0;
+            background-color: #fff;
+        }
+    }
+}

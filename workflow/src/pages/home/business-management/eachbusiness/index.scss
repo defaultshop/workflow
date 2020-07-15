@@ -1,0 +1,89 @@
+.eachbusiness{
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  .businesstype{
+      float: left;
+      width: 43px;
+      padding: 0 15px;
+      background-color: #3671FF;
+      color: #fff;
+      height: 110px;
+      line-height: 110px;
+      text-align: center;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      span{
+          display: inline-block;
+          font-size: 14px; 
+          line-height: 18px;
+          word-wrap: break-word; 
+          vertical-align: middle;
+      }
+  }
+  .businesscont{
+      float: left;
+      padding: 10px;
+      width: 90%;
+      width: -moz-calc(100% - 43px);
+      width: -webkit-calc(100% - 43px);
+      width: calc(100% - 43px);
+      .business1{
+          float: left;
+          line-height: 45px;
+          width: 35%;
+          margin-left: 5%;
+          font-size: 16px;
+          div{
+              &:nth-child(2){
+                  color: #999999;
+                  font-size: 12px;
+              }
+              span{
+                display: inline-block;
+                line-height: 18px;
+                vertical-align: middle; 
+             }
+          }
+      }
+      .business2{
+          float: left;
+          margin: 0 6rem;
+          line-height: 90px;
+          span{
+              display: inline-block;
+              background-color: #daeff9;
+              color: #4430ec;
+              border: 1px solid #4430ec;
+              border-radius: 0.5rem;
+              width: 5rem;
+              height: 4rem;
+              line-height: 4rem;
+              text-align: center;
+          }
+      }
+      .business3{
+          float: left;
+          line-height: 2.5rem;
+          color: #999999;
+      }
+      .business4{
+          float: left;
+          line-height: 45px;
+        //   width: 35%;
+          font-size: 12px;
+          div{
+              &:nth-child(1){
+                  color: #999999;
+              }
+          }
+      }
+  }
+  
+  &:hover{
+      box-shadow: 0 0 5px #ccc;
+  }
+}

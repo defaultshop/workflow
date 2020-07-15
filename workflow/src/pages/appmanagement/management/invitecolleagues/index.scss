@@ -1,0 +1,123 @@
+#invitepeople{
+    background-color: #ffffff;
+    width: 700px;
+    padding: 1rem 0;
+    .invitetit{
+        height: 4rem;
+        line-height: 4rem;
+        font-weight: 600;
+        font-size: 1.8rem;
+        text-align: center;
+        position: relative;
+        .back{
+            font-size: 1.6rem;
+            position: absolute;
+            left: 2rem;
+            top: 1.3rem;
+            cursor: pointer;
+        }
+        .close{
+            font-size: 1.6rem;
+            position: absolute;
+            right: 2rem;
+            top: 1.3rem;
+            cursor: pointer;
+        }
+        span{
+            display: inline-block;
+            b{
+                display: block;
+                line-height: 3rem;
+                &:nth-child(2){
+                    line-height: 1rem;
+                    font-size: 0.9rem;
+                    color: #ccc;
+                }
+            }
+        }
+    }
+    .projectall{
+        height: 3rem;
+        line-height: 3rem;
+        width: 85%;
+        margin-left: 9%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+    }
+    .colleaguesree{
+        width: 85%;
+        margin-left: 9%;
+        height: 18rem;
+        overflow-y: auto;
+        .eachproject{
+            line-height: 2rem;
+            .eachprojectit{
+                display: flex;
+                justify-content: space-between;
+                div{
+                    &:nth-child(1){
+                        cursor: pointer;
+                        i{
+                            margin-right: 0.5rem;
+                            font-size: 1.2rem;
+                            color: #999999;
+                        }
+                    }
+                }
+            }
+        }
+        .eachprotree{
+            display: flex;
+            justify-content: space-between;
+            height: 2rem;
+            line-height: 2rem;
+            div{
+                width: 30%;
+                &:nth-child(1){
+                    width: 40%;
+                    text-indent: 1rem;
+                    .img{
+                        font-size: 1rem;
+                        margin-right: 0.3rem;
+                    }
+                }
+                &:nth-child(3){
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .projectbot{
+        width: 90%;
+        margin-left: 7%;
+        height: 4rem;
+        line-height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        .choose{
+            color: #638df9;
+            cursor: pointer;
+        }
+        .projectbtn{
+            span{
+                &:nth-child(1){
+                    color: #999999;
+                    cursor: pointer;
+                }
+                &:nth-child(2){
+                    height: 2.6rem;
+                    line-height: 2.6rem;
+                    padding: 0 2.5rem;
+                    display: inline-block;
+                    background-color: #638df9;
+                    color: #ffffff;
+                    border-radius: 0.3rem;
+                    cursor: pointer;
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}

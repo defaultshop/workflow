@@ -1,0 +1,77 @@
+.el-header {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 60px;
+    font-size: 0.8rem;
+    
+}
+  
+.el-aside {
+    color: #333;
+}
+#agency{
+    height: 100%;
+    .agencytask{
+        height: 80%; /*写给不支持calc()的浏览器*/
+        height: -moz-calc(100% - 4rem);
+        height: -webkit-calc(100% - 4rem);
+        height: calc(100% - 4rem);
+        .el-main{
+            padding: 20px 20px 0;
+        }
+        .agencyhead{
+            display: flex;
+            justify-content: space-between;
+            .agencyicon{
+                font-size: 1rem;
+                margin-right: 0.5rem;
+            }
+            .num{
+                color: #e4941d;
+            }
+        }
+        .submit{
+            position: relative;
+            height: 100%;
+            font-size: 0.8rem;
+            .submitfield{
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 4rem;
+                width: 100%;
+                overflow-y: auto;
+                .tit{
+                    line-height: 3rem;
+                }
+                .int{
+                    width: 20rem;
+                    .el-select{
+                        width: 100%;
+                    }
+                }
+            }
+            .submitbtn{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #ffffff;
+                height: 4rem;
+                line-height: 4rem;
+                span{
+                    display: inline-block;
+                    height: 1.8rem;
+                    line-height: 1.8rem;
+                    background-color: #2394ec;
+                    color: #ffffff;
+                    width: 5rem;
+                    text-align: center;
+                    border-radius: 0.3rem;
+                    margin-left: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
