@@ -1,62 +1,28 @@
 <template>
   <div id="app">
-    <router-view />
-    <Row v-show="true">
-      <Col class="demo-spin-col" span="8">
-        <Spin fix>
-          <Icon type="ios-loading" size="18" class="demo-spin-icon-load"></Icon>
-        </Spin>
-      </Col>
-    </Row>
+    <router-view  v-wechat-title="$route.meta.title"/>
   </div>
 </template>
 
 <script>
-import * as localData from '@/api/common';
 export default {
-  name: 'App',
-  data() {
-    return {};
-  },
-  created() {
-    localData.get_allList().then(res => {
-      if (res.success) {
-        console.log('所有的枚举', res.result);
-        sessionStorage.setItem('all-enum', JSON.stringify(res.result));
-      }
-    });
-  },
-
-  methods: {}
+  mounted() {
+    if (!this.$store.state.config && localStorage.getItem('userinfo')) {
+      this.$store.state.config = JSON.parse(localStorage.getItem('userinfo'));
+    }
+  }
 };
 </script>
 
-<style lang="less" scoped>
-.demo-spin-icon-load {
-  animation: ani-demo-spin 1s linear infinite;
-}
-.ivu-icon {
-  font-size: 50px !important;
-}
-@keyframes ani-demo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.demo-spin-col {
-  height: 100vh;
-  width: 100vw !important;
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-}
-.ivu-spin-fix {
-  background: none !important;
+<style lang="less">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #333;
+  font-size: 0.28rem;
+  height: 100%;
+  background-color: #F6F8F9;
 }
 </style>

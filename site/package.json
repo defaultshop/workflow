@@ -1,60 +1,41 @@
 {
-  "name": "m-base",
-  "version": "0.0.1",
-  "author": "zkn <zkn@baitutech.com>",
-  "private": false,
+  "name": "newmanage",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve --open",
-    "preview": "vue-cli-service build --mode preview",
-    "build": "vue-cli-service build"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "babel-polyfill": "^6.26.0",
-    "es6-promise": "^4.2.8",
-    "js-cookie": "^2.2.1",
-    "linq": "^3.2.0",
-    "moment": "^2.24.0",
-    "view-design": "^4.1.3",
-    "vue": "^2.5.10",
-    "vue-router": "^3.0.1",
-    "vue-wechat-title": "^2.0.5",
-    "vuex": "^3.0.1"
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "js-base64": "^3.4.5",
+    "k-form-design": "^3.6.1",
+    "mint-ui": "^2.2.13",
+    "oidc-client": "^1.10.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vue-seamless-scroll": "^1.1.21",
+    "vue-wechat-title": "^2.0.7",
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.1",
-    "@vue/cli-plugin-eslint": "^3.0.1",
-    "@vue/cli-plugin-unit-mocha": "^3.0.1",
-    "@vue/cli-service": "^3.0.1",
-    "@vue/eslint-config-standard": "^3.0.0-beta.10",
-    "@vue/test-utils": "^1.0.0-beta.10",
-    "chai": "^4.1.2",
-    "eslint-plugin-cypress": "^2.0.1",
-    "iview": "^3.5.4",
-    "less": "^2.7.3",
-    "less-loader": "^4.0.5",
-    "lint-staged": "^6.0.0",
-    "mockjs": "^1.0.1-beta3",
-    "v-viewer": "^1.5.1",
-    "vue-template-compiler": "^2.5.13",
-    "vuex": "^3.1.3"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.11"
   }
 }

@@ -1,0 +1,135 @@
+.redemption{
+  position: absolute;
+  top: 0.34rem;
+  left: 0.32rem;
+  right: 0.32rem;
+  bottom: 0.61rem;
+  z-index: 11;
+  background-color: #ffffff;
+  border-radius: 0.08rem;
+  .redemption-num{
+    width: 6.04rem;
+    height: 2.05rem;
+    margin: 0.46rem 0.41rem 0;
+    background: url(../../img/vouchers.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    .redemptioname{
+      width: 3.32rem;
+      height: 0.7rem;
+      font-size: 0.32rem;
+      font-weight: bold;
+      color: rgba(51,51,51,1);
+      line-height: 0.4rem;
+      margin: 0.28rem 0 0 0.42rem;
+    }
+    .redemptionprice{
+      height: 0.22rem;
+      font-size: 0.28rem;
+      font-weight: 500;
+      margin: 0.28rem 0 0 0.42rem;
+      color: #999;
+      .price{
+        color: #FC6919;
+      }
+    }
+    .progress{
+      margin: 0.18rem 0 0 0.42rem;
+      width:3.54rem;
+      .mt-progress-progress{
+        background-color: #FC6919;
+      }
+    }
+    .redemptionremain{
+      text-align: right;
+      div{
+        &:nth-child(1){
+          width: 0.56rem;
+          height: 0.31rem;
+          font-size: 0.4rem;
+          font-weight: bold;
+          margin: 0.5rem 0.54rem 0.3rem;
+        }
+        &:nth-child(2){
+          width: 1rem;
+          height: 0.53rem;
+          font-size: 0.24rem;
+          font-weight: 500;
+          color:#999;
+          line-height: 0.3rem;
+          margin-right: 0.3rem;
+          display: inline-block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .remaintime{
+    height: 1.1rem;
+    line-height: 1.1rem;
+    font-size: 0.32rem;
+    font-weight: bold;
+    .day{
+      color: #1978FC;
+      margin-left: 0.1rem;
+    }
+  }
+  .countdownall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    div{
+      display: flex;
+      .time{
+        margin: 0.19rem;
+      }
+    }
+  }
+  .support{
+    width: 6.29rem;
+    margin: 0 0.28rem;
+    background-color: #F6F8F9;
+    border-radius: 0.08rem;
+    text-align: left;
+    padding: 0.4rem 0;
+    .supportit{
+      font-size: 0.28rem;
+      font-weight: 500;
+      padding-left: 0.4rem;
+    }
+    ul{
+      margin: 0.4rem 0.4rem 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      li{
+        width: 50%;
+        line-height: 0.48rem;
+        color: #333333;
+        font-size: 0.26rem;
+        list-style: none;
+        i{
+          display: inline-block;
+          width: 0.1rem;
+          height: 0.1rem;
+          border-radius: 50%;
+          background-color: #1978FC;
+          text-indent: 100px;
+          overflow: hidden;
+          vertical-align: center;
+          margin-bottom: 0.05rem;
+          margin-right: 0.1rem;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+  .redemptionbtn{
+    width: 4.72rem;
+    display: inline-block;
+    margin-top: 0.78rem;
+  }
+}
